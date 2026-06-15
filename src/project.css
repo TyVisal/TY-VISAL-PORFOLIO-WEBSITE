@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+#project-item:hover {
+  filter: brightness(0.8);
+}
+#img-project:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+
+#project-item:hover #ey-e-two {
+  display: block;
+  color: white;
+}
+
+#project-item:hover #ey-e-one {
+  display: block;
+  color: white;
+}

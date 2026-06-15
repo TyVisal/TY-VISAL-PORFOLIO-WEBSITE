@@ -1,0 +1,131 @@
+@import "tailwindcss";
+@import "./grid.css";
+@import "tailwindcss";
+@import "./project.css";
+@theme {
+  --font-frijole: "Frijole", system-ui;
+  --font-seymour-one: "Seymour One", sans-serif;
+  --font-audiowide: "Audiowide", sans-serif;
+  --font-rubik-mono-one: "Rubik Mono One", monospace;
+  --font-acme: "Acme", sans-serif;
+  --font-press-start: "Press Start 2P", system-ui;
+  --font-grenze: "Grenze", serif;
+  --font-notable: "Notable", sans-serif;
+}
+html {
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+}
+/* =========== */
+@media (min-width: 800px) {
+  #skill-teachnology {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 150px);
+  }
+}
+
+@media (min-width: 850px) {
+  #homepage-one-1 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #homepage-childone-1 {
+    width: 40%;
+  }
+  #homepage-childtwo-2 {
+    width: 40%;
+  }
+  #about-me-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+  }
+  #aboute-me-child-one {
+    width: 25%;
+    margin-left: 0;
+  }
+  #about-me-child-two {
+    width: 60%;
+  }
+}
+
+@media (min-width: 930px) {
+  #skill-teachnology {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 150px);
+  }
+}
+
+@media (min-width: 940px) {
+  #nav-2-1 {
+    display: flex;
+  }
+  #nav-2-2 {
+    display: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  #skill-teachnology {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 150px);
+  }
+}
+/* ================ */
+#s-f-item:hover {
+  background-color: rgb(55, 65, 81);
+  transition: background-color 1s ease;
+
+  #s-f-item-child {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  #s-f-img-one {
+    transform: scale(0.9);
+  }
+}
+/* ================== */
+/* @media (min-width: ) {
+} */
+
+body.light-on {
+  background: linear-gradient(135deg, #000000 0%, #000000 100%);
+  color: #ffffff;
+}
+body.light-on #nav-bar-main {
+  background-color: whitesmoke;
+  color: black;
+}
+
+body.light-on #nav-2-2 {
+  background-color: black;
+  color: whitesmoke;
+}
+
+body.light-on #skill-teachnology {
+  background-color: rgb(90, 100, 135);
+  color: black;
+}
+
+body.light-on #main-footer {
+  background-color: whitesmoke;
+  color: black;
+}
+body.light-on #main-projects-child-two {
+  background-color: rgb(121, 115, 115);
+  color: black;
+}
