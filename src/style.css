@@ -17,11 +17,26 @@ html {
   scroll-behavior: smooth;
 }
 /* =========== */
+
+@media (min-width: 530px) {
+  .summary-text-mainitem {
+    padding-right: 100px;
+  }
+  #btn-detail {
+    margin-right: 100px;
+  }
+}
 @media (min-width: 800px) {
   #skill-teachnology {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 150px);
+  }
+  .summary-text-mainitem {
+    padding-right: 0px;
+  }
+  #btn-detail {
+    margin-right: 20px;
   }
 }
 
@@ -128,4 +143,22 @@ body.light-on #main-footer {
 body.light-on #main-projects-child-two {
   background-color: rgb(121, 115, 115);
   color: black;
+}
+#nav-2-2-hover li:hover {
+  color: gray;
+}
+
+#nav-2-1 li:hover {
+  color: gray;
+}
+
+#btn-detail:hover {
+  background-color: rgb(86, 85, 90);
+  color: whitesmoke;
+}
+#link-on-main div:hover {
+  background-color: rgb(161, 155, 155);
+}
+#footer-navigat-hover div a:hover {
+  color: gray;
 }
