@@ -15,8 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Acme&family=Audiowide&family=Freeman&family=Frijole&family=Grenze:ital,wght@0,100..900;1,100..900&family=Notable&family=Press+Start+2P&family=Prosto+One&family=Rubik+Mono+One&family=Seymour+One&family=Silkscreen:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/TY-VISAL-PORFOLIO-WEBSITE/assets/index-BxJmp65O.js"></script>
-    <link rel="stylesheet" crossorigin href="/TY-VISAL-PORFOLIO-WEBSITE/assets/index-CA3GcDME.css">
+    <script type="module" crossorigin src="/TY-VISAL-PORFOLIO-WEBSITE/assets/index-ChCLvn-A.js"></script>
+    <link rel="stylesheet" crossorigin href="/TY-VISAL-PORFOLIO-WEBSITE/assets/index-C-OP7CFm.css">
   </head>
   <body>
     <div id="home"></div>
@@ -47,9 +47,10 @@
     </nav>
     <div
       id="nav-2-2"
-      class="top-[8vh] w-[100%] flex justify-center items-center fixed bg-white h-[5vh]"
+      class="top-[8vh] w-[100%] flex justify-center items-center fixed bg-white h-[5vh] z-50"
     >
       <ul
+        id="nav-2-2-hover"
         class="flex flex-row gap-[0.9rem] font-audiowide text-[10px] sm:text-[15px]"
       >
         <li class="cursor-pointer"><a href="#home">HOME</a></li>
@@ -66,14 +67,23 @@
       class="mt-[200px] w-[100%] flex flex-col px-[40px]"
     >
       <div id="homepage-childone-1" class="flex flex-col gap-[0.6rem]">
-        <div class="font-frijole lg:text-[24px]">Wellcome <span>!</span></div>
-        <div class="font-notable text-[30px] lg:text-[45px]">I"m Ty Visal</div>
-        <div class="font-audiowide lg:text-[20px]">
+        <div class="summary-text-mainitem font-frijole lg:text-[24px]">
+          Wellcome <span>!</span>
+        </div>
+        <div
+          class="summary-text-mainitem font-notable text-[30px] lg:text-[45px]"
+        >
+          I"m Ty Visal
+        </div>
+        <div
+          id="summary-text-main"
+          class="summary-text-mainitem font-audiowide lg:text-[20px] text-gray-500"
+        >
           I'm a Computer Science student and a web developer. I enjoy creating
           websites and learning new technologies to improve my skills.
         </div>
         <div class="flex justify-between items-center">
-          <div class="flex gap-[1rem]">
+          <div id="link-on-main" class="flex gap-[0.5rem]">
             <div
               class="bg-gray-400 w-[30px] h-[30px] rounded-[50%] flex justify-center items-center cursor-pointer"
             >
@@ -110,7 +120,8 @@
             </div>
           </div>
           <button
-            class="bg-gray-400 text-gray-950 px-[10px] py-[5px] rounded-[0.7rem] mr-[10%] flex justify-center items-center cursor-pointer"
+            id="btn-detail"
+            class="bg-gray-400 text-gray-950 px-[5px] py-[5px] rounded-[0.7rem] mr-[10px] flex justify-center items-center cursor-pointer"
           >
             <a href="#about"
               ><i
@@ -137,22 +148,27 @@
       <div id="aboute-me-child-one" class="ml-[-5%] font-audiowide text-[30px]">
         About me
       </div>
-      <div id="about-me-child-two" class="font-acme text-[20px]">
-        Hello! My name is Ty Visal. I am a Computer Science student with a
-        strong interest in web development and software technology. I enjoy
-        learning how websites and applications work, and I always try to improve
-        my skills by creating real projects. I started my journey in programming
-        by learning the fundamentals of HTML, CSS, and JavaScript. After that, I
-        continued exploring backend development and databases with technologies
-        such as Node.js, Express.js, SQL, C#, and ASP.NET. I enjoy creating
-        responsive websites, building APIs, and connecting applications with
-        databases. I like solving problems, thinking logically, and finding
-        better ways to build projects. I believe that practice and continuous
-        learning are important for becoming a better developer. Besides coding,
-        I enjoy playing football, playing games, and spending time with friends.
-        These activities help me relax and improve my teamwork and communication
-        skills. My goal is to become a professional developer, create useful
-        applications, and continue growing in the technology field.
+      <div id="about-me-child-two" class="font-acme text-[20px] text-gray-500">
+        Hello! My name is Ty Visal. I am currently a fourth-year, first-semester
+        Computer Science student at Asia Euro University and expect to graduate
+        with a Bachelor's degree in 2027. I have a strong interest in web
+        development and software engineering. I enjoy learning how websites and
+        applications work, and I continuously improve my skills by developing
+        real-world projects. I began my web development journey by learning the
+        fundamentals of HTML, CSS, and JavaScript. After that, I expanded my
+        frontend skills by learning Tailwind CSS and continued exploring backend
+        development and databases using technologies such as Node.js,
+        Express.js, and SQL. I enjoy building responsive and user-friendly
+        websites. I am passionate about solving problems, thinking logically,
+        and finding efficient ways to develop software. I believe that
+        continuous learning and hands-on practice are essential for becoming a
+        better developer. My goal is to become a professional Full-Stack
+        Developer, build useful applications that solve real-world problems, and
+        continue growing in the field of software development. I am currently
+        seeking a Web Developer Internship to gain hands-on experience, learn
+        how software development teams work in a professional environment, apply
+        my technical skills to real-world projects, and continue improving as a
+        developer.
       </div>
     </div>
     <!-- ================================== -->
@@ -174,12 +190,12 @@
               alt=""
             />
           </div>
-          <div class="font-audiowide">40%</div>
+          <div class="font-audiowide">80%</div>
           <div
             id="tc-double-child"
             class="flex flex-row justify-between items-center"
           >
-            <div class="w-[40%] h-[2vh] bg-gray-950"></div>
+            <div class="w-[80%] h-[2vh] bg-gray-950"></div>
             <div class="w-[4%] h-[2vh] bg-gray-950"></div>
           </div>
         </div>
@@ -193,12 +209,12 @@
               alt=""
             />
           </div>
-          <div class="font-audiowide">50%</div>
+          <div class="font-audiowide">70%</div>
           <div
             id="tc-double-child"
             class="flex flex-row justify-between items-center"
           >
-            <div class="w-[50%] h-[2vh] bg-gray-950"></div>
+            <div class="w-[70%] h-[2vh] bg-gray-950"></div>
             <div class="w-[4%] h-[2vh] bg-gray-950"></div>
           </div>
         </div>
@@ -212,12 +228,12 @@
               alt=""
             />
           </div>
-          <div class="font-audiowide">80%</div>
+          <div class="font-audiowide">50%</div>
           <div
             id="tc-double-child"
             class="flex flex-row justify-between items-center"
           >
-            <div class="w-[80%] h-[2vh] bg-gray-950"></div>
+            <div class="w-[50%] h-[2vh] bg-gray-950"></div>
             <div class="w-[4%] h-[2vh] bg-gray-950"></div>
           </div>
         </div>
@@ -229,9 +245,9 @@
               alt=""
             />
           </div>
-          <div class="font-audiowide">70%</div>
+          <div class="font-audiowide">60%</div>
           <div id="tc-double-child" class="flex flex-row justify-between">
-            <div class="w-[70%] h-[2vh] bg-gray-950"></div>
+            <div class="w-[60%] h-[2vh] bg-gray-950"></div>
             <div class="w-[4%] h-[2vh] bg-gray-950"></div>
           </div>
         </div>
@@ -243,12 +259,12 @@
               alt=""
             />
           </div>
-          <div class="font-audiowide">80%</div>
+          <div class="font-audiowide">30%</div>
           <div
             id="tc-double-child"
             class="flex flex-row justify-between items-center"
           >
-            <div class="w-[80%] h-[2vh] bg-gray-950"></div>
+            <div class="w-[30%] h-[2vh] bg-gray-950"></div>
             <div class="w-[4%] h-[2vh] bg-gray-950"></div>
           </div>
         </div>
@@ -260,12 +276,12 @@
               alt=""
             />
           </div>
-          <div class="font-audiowide">95%</div>
+          <div class="font-audiowide">20%</div>
           <div
             id="tc-double-child"
             class="flex flex-row justify-between items-center"
           >
-            <div class="w-[95%] h-[2vh] bg-gray-950"></div>
+            <div class="w-[20%] h-[2vh] bg-gray-950"></div>
             <div class="w-[4%] h-[2vh] bg-gray-950"></div>
           </div>
         </div>
@@ -279,9 +295,26 @@
               alt=""
             />
           </div>
-          <div class="font-audiowide">70%</div>
+          <div class="font-audiowide">20%</div>
           <div class="flex flex-row justify-between items-center">
-            <div id="tc-double-child" class="w-[70%] h-[2vh] bg-gray-950"></div>
+            <div id="tc-double-child" class="w-[20%] h-[2vh] bg-gray-950"></div>
+            <div id="tc-double-child" class="w-[4%] h-[2vh] bg-gray-950"></div>
+          </div>
+        </div>
+        <!-- add skill -->
+        <div>
+          <div
+            class="w-full h-[70%] flex justify-center items-center overflow-hidden"
+          >
+            <img
+              class="h-[50%] w-[50%] object-contain"
+              src="/TY-VISAL-PORFOLIO-WEBSITE/assets/react-WNyDMrSj.png"
+              alt=""
+            />
+          </div>
+          <div class="font-audiowide">20%</div>
+          <div class="flex flex-row justify-between items-center">
+            <div id="tc-double-child" class="w-[20%] h-[2vh] bg-gray-950"></div>
             <div id="tc-double-child" class="w-[4%] h-[2vh] bg-gray-950"></div>
           </div>
         </div>
@@ -461,11 +494,14 @@
           class="item item1 w-full h-full cursor-pointer relative w-full h-full flex justify-center items-center"
         >
           <div class="w-full h-full overflow-hidden">
-            <a href="https://shadowty001.github.io/webshop/" target="_blank">
+            <a
+              href="https://tyvisal.github.io/AEU-static-website/"
+              target="_blank"
+            >
               <img
                 id="img-project"
                 class="w-full h-full object-cover"
-                src="/TY-VISAL-PORFOLIO-WEBSITE/assets/image-B2LcRdQD.png"
+                src="/TY-VISAL-PORFOLIO-WEBSITE/assets/2-Bed4FNG9.png"
                 alt=""
             /></a>
           </div>
@@ -482,12 +518,14 @@
           class="item item2 cursor-pointer relative w-full h-full flex justify-center items-center"
         >
           <div class="w-full h-full overflow-hidden">
-            <img
-              id="img-project"
-              class="w-full h-full object-cover"
-              src="/TY-VISAL-PORFOLIO-WEBSITE/assets/image%20copy%202-be55W43z.png"
-              alt=""
-            />
+            <a href=" https://tyvisal.github.io/task-timer/" target="_blank">
+              <img
+                id="img-project"
+                class="w-full h-full object-cover"
+                src="/TY-VISAL-PORFOLIO-WEBSITE/assets/3-BrlKn-a0.png"
+                alt=""
+              />
+            </a>
           </div>
           <i
             id="ey-e-two"
@@ -501,12 +539,14 @@
           class="item item3 cursor-pointer relative w-full h-full flex justify-center items-center"
         >
           <div class="w-full h-full overflow-hidden">
-            <img
-              id="img-project"
-              class="w-full h-full object-cover"
-              src="/TY-VISAL-PORFOLIO-WEBSITE/assets/1-CSDq9CmJ.png"
-              alt=""
-            />
+            <a href="https://tyvisal.github.io/color-switcher/" target="_blank">
+              <img
+                id="img-project"
+                class="w-full h-full object-cover"
+                src="/TY-VISAL-PORFOLIO-WEBSITE/assets/4-BrAUJr1E.png"
+                alt=""
+              />
+            </a>
           </div>
           <i
             id="ey-e-two"
@@ -520,12 +560,14 @@
           class="item item4 cursor-pointer relative w-full h-full flex justify-center items-center"
         >
           <div class="w-full h-full overflow-hidden">
-            <img
-              id="img-project"
-              class="w-full h-full object-cover"
-              src="/TY-VISAL-PORFOLIO-WEBSITE/assets/image%20copy%205-DWUG89X3.png"
-              alt=""
-            />
+            <a href="https://tyvisal.github.io/simple-counter/" target="_blank">
+              <img
+                id="img-project"
+                class="w-full h-full object-cover"
+                src="/TY-VISAL-PORFOLIO-WEBSITE/assets/5-BnOyJ-lf.png"
+                alt=""
+              />
+            </a>
           </div>
           <i
             id="ey-e-two"
@@ -568,7 +610,7 @@
         <div class="flex flex-col gap-[1rem]">
           <div class="flex flex-col gap-[0.3rem]">
             <div class="font-rubik-mono-one text-[30px]">TY-VISAL</div>
-            <div class="font-grenze md:text-[17px]">
+            <div class="font-grenze md:text-[17px] xl:text-[20px]">
               Building modern, responsive, and user-friendly websites with clean
               code and creative solutions. Available for freelance & full-time
               opportunities.
@@ -595,7 +637,7 @@
         <div class="flex flex-col gap-[1rem] sm:flex-row sm:gap-[5rem]">
           <div class="flex flex-col gap-[0.5rem]">
             <div class="font-audiowide md:text-[20px]">Navigate</div>
-            <div class="font-grenze md:text-[17px]">
+            <div id="footer-navigat-hover" class="font-grenze md:text-[17px]">
               <div class="cursor-pointer"><a href="#home">Home</a></div>
               <div class="cursor-pointer"><a href="#about">About</a></div>
               <div class="cursor-pointer"><a href="#skills">Skill</a></div>
