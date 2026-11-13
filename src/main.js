@@ -1,3 +1,5 @@
+// main.js
+import { projects } from "./partOfproject.js";
 import "./style.css";
 
 const lightBtn = document.getElementById("nav-light-off");
@@ -13,3 +15,5 @@ lightBtn.addEventListener("click", () => {
     lightBtn.classList.add("bi-lightbulb");
   }
 });
+
+// projects

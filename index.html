@@ -483,115 +483,73 @@
     <div id="projects"></div>
     <div id="main-projects" class="mt-[20%] w-[100%] h-full">
       <div class="font-audiowide text-[30px] ml-[10%]">Projects</div>
-      <div
-        id="main-projects-child-two"
-        class="parent-main-grid mt-[5%] w-full py-[5%]"
+      <section
+        class="max-w-6xl min-[1300px]:max-w-7xl mx-auto px-5 sm:px-8 lg:px-6 min-[1300px]:px-10 mt-6 pb-10"
       >
         <div
-          id="project-item"
-          class="item item1 w-full h-full cursor-pointer relative w-full h-full flex justify-center items-center"
-        >
-          <div class="w-full h-full overflow-hidden">
-            <a
-              href="https://tyvisal.github.io/AEU-static-website/"
-              target="_blank"
-            >
-              <img
-                id="img-project"
-                class="w-full h-full object-cover"
-                src="src/assets/projects/2.png"
-                alt=""
-            /></a>
-          </div>
-          <i
-            id="ey-e-two"
-            class="bi bi-eye text-white absolute text-[20px] text-center hidden lg:text-[30px]"
-          >
-            click to visite</i
-          >
-        </div>
+          id="card-grid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 min-[1300px]:gap-10"
+        ></div>
+      </section>
 
+      <!-- Detail Modal (Hidden by default) -->
+      <div
+        id="detail-modal"
+        class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+      >
         <div
-          id="project-item"
-          class="item item2 cursor-pointer relative w-full h-full flex justify-center items-center"
+          class="bg-[#181818] border border-neutral-700 rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl"
         >
-          <div class="w-full h-full overflow-hidden">
-            <a href=" https://tyvisal.github.io/task-timer/" target="_blank">
-              <img
-                id="img-project"
-                class="w-full h-full object-cover"
-                src="src/assets/projects/3.png"
-                alt=""
-              />
-            </a>
-          </div>
-          <i
-            id="ey-e-two"
-            class="bi bi-eye text-white absolute text-[20px] text-center hidden lg:text-[30px]"
-          >
-            click to visite</i
-          >
-        </div>
-        <div
-          id="project-item"
-          class="item item3 cursor-pointer relative w-full h-full flex justify-center items-center"
-        >
-          <div class="w-full h-full overflow-hidden">
-            <a href="https://tyvisal.github.io/color-switcher/" target="_blank">
-              <img
-                id="img-project"
-                class="w-full h-full object-cover"
-                src="src/assets/projects/4.png"
-                alt=""
-              />
-            </a>
-          </div>
-          <i
-            id="ey-e-two"
-            class="bi bi-eye text-white absolute text-[20px] text-center hidden lg:text-[30px]"
-          >
-            click to visite</i
-          >
-        </div>
-        <div
-          id="project-item"
-          class="item item4 cursor-pointer relative w-full h-full flex justify-center items-center"
-        >
-          <div class="w-full h-full overflow-hidden">
-            <a href="https://tyvisal.github.io/simple-counter/" target="_blank">
-              <img
-                id="img-project"
-                class="w-full h-full object-cover"
-                src="src/assets/projects/5.png"
-                alt=""
-              />
-            </a>
-          </div>
-          <i
-            id="ey-e-two"
-            class="bi bi-eye text-white absolute text-[20px] text-center hidden lg:text-[30px]"
-          >
-            click to visite</i
-          >
-        </div>
-        <div
-          id="project-item"
-          class="item item5 cursor-pointer relative w-full h-full flex justify-center items-center"
-        >
-          <div class="w-full h-full overflow-hidden">
+          <!-- Modal Image -->
+          <div class="relative w-full h-60 bg-[#101010]">
             <img
-              id="img-project"
+              id="modal-img"
+              src=""
+              alt="Project Preview"
               class="w-full h-full object-cover"
-              src="src/assets/projects/image copy 4.png"
-              alt=""
             />
+            <button
+              onclick="closeModal()"
+              class="absolute top-3 right-3 bg-black/70 hover:bg-[#e6c656] hover:text-[#121212] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold transition-colors"
+            >
+              ✕
+            </button>
           </div>
-          <i
-            id="ey-e-two"
-            class="bi bi-eye text-white absolute text-[20px] text-center hidden lg:text-[30px]"
-          >
-            click to visite</i
-          >
+
+          <!-- Modal Content -->
+          <div class="p-6">
+            <h3
+              id="modal-title"
+              class="text-xl font-bold text-[#e6c656] mb-2"
+            ></h3>
+            <p
+              id="modal-desc"
+              class="text-neutral-300 text-sm leading-relaxed mb-4"
+            ></p>
+
+            <!-- Tech Stack Tags -->
+            <div id="modal-tags" class="flex flex-wrap gap-2 mb-6"></div>
+
+            <!-- Modal Footer Buttons -->
+            <div
+              class="flex justify-end gap-3 border-t border-neutral-800 pt-4"
+            >
+              <button
+                onclick="closeModal()"
+                class="py-2 px-4 text-xs font-semibold rounded border border-neutral-700 bg-[#1f1f1f] text-neutral-200 hover:bg-neutral-800 transition-colors"
+              >
+                Close
+              </button>
+              <a
+                id="modal-site-link"
+                href="#"
+                target="_blank"
+                class="py-2 px-4 text-xs font-semibold rounded bg-[#e6c656] text-[#121212] hover:bg-[#d4b445] transition-colors"
+              >
+                Visit Live Site
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -661,6 +619,7 @@
     <!-- ================================= -->
 
     <!-- ======================================= -->
+    <!-- <script src="/src/partOfproject.js"></script> -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
